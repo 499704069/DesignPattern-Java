@@ -3,15 +3,14 @@ package com.my.dp.abstractFactory.factory;
 import com.my.dp.abstractFactory.table.*;
 
 /**
- * @author zy
- * @version 1.0
- * @date 2021/1/12 14:24
+ *  简单工厂代替抽象工厂
+ *  DataAccess替代IFacotry,AccessFactory,SqlserverFactory
  */
 
 /**
- *
- *  简单工厂代替抽象工厂
- *  DataAccess替代IFacotry,AccessFactory,SqlserverFactory
+ * @author zy
+ * @version 1.0
+ * @date 2021/1/12 14:24
  */
 public class DataAccess {
 
