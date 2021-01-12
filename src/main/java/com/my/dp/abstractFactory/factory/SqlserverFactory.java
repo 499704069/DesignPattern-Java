@@ -1,6 +1,8 @@
-package com.my.dp.abstractFactory.fm;
+package com.my.dp.abstractFactory.factory;
 
+import com.my.dp.abstractFactory.table.IDeparment;
 import com.my.dp.abstractFactory.table.IUser;
+import com.my.dp.abstractFactory.table.SqlserverDepartment;
 import com.my.dp.abstractFactory.table.SqlserverUser;
 
 /**
@@ -12,5 +14,9 @@ public class SqlserverFactory implements IFactory {
 
     public IUser createUser() {
         return new SqlserverUser();
+    }
+
+    public IDeparment createDepartment() {
+        return new SqlserverDepartment();
     }
 }

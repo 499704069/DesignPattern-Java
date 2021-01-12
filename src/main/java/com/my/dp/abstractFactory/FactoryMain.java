@@ -1,7 +1,8 @@
 package com.my.dp.abstractFactory;
 
-import com.my.dp.abstractFactory.fm.IFactory;
-import com.my.dp.abstractFactory.fm.SqlserverFactory;
+import com.my.dp.abstractFactory.entity.Department;
+import com.my.dp.abstractFactory.factory.IFactory;
+import com.my.dp.abstractFactory.factory.SqlserverFactory;
 import com.my.dp.abstractFactory.entity.User;
 import com.my.dp.abstractFactory.table.IUser;
 
@@ -20,6 +21,7 @@ public class FactoryMain {
 
     public static void main(String[] args) {
         User user = new User();
+        Department department = new Department();
 
         //factory根据实际替换
         IFactory factory = new SqlserverFactory();
