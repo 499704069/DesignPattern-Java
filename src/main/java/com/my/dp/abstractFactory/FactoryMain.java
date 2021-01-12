@@ -10,6 +10,12 @@ import com.my.dp.abstractFactory.table.IUser;
  * @version 1.0
  * @date 2021/1/12 10:52
  */
+
+/**
+ *
+ * 如果增加一个Department需要增加IDepartment,SqlserverDepartment,AccessDepartment
+ *  IFactory增加createDepartment方法，同时IFactory得所有实现类都得修改
+ */
 public class FactoryMain {
 
     public static void main(String[] args) {
