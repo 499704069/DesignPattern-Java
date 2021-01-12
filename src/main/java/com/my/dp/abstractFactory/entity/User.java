@@ -1,4 +1,4 @@
-package com.my.entity;
+package com.my.dp.abstractFactory.entity;
 
 import lombok.Data;
 
