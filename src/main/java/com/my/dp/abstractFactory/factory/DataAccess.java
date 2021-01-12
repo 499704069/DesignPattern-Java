@@ -11,7 +11,7 @@ import com.my.dp.abstractFactory.table.*;
 /**
  *
  *  简单工厂代替抽象工厂
- *
+ *  DataAccess替代IFacotry,AccessFactory,SqlserverFactory
  */
 public class DataAccess {
 
