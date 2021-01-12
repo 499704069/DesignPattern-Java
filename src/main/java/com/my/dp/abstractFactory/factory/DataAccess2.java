@@ -38,9 +38,9 @@ public class DataAccess2 {
         return ret;
     }
 
-    public IDeparment createDepartment() throws IllegalAccessException, InstantiationException {
+    public IDepartment createDepartment() throws IllegalAccessException, InstantiationException {
         Class<?> aClass = MAP.get(DB + "." + TABLE_DEPARTMENT);
-        IDeparment ret = (IDeparment) aClass.newInstance();
+        IDepartment ret = (IDepartment) aClass.newInstance();
         return ret;
     }
 }

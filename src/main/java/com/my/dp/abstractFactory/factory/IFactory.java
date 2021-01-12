@@ -1,6 +1,6 @@
 package com.my.dp.abstractFactory.factory;
 
-import com.my.dp.abstractFactory.table.IDeparment;
+import com.my.dp.abstractFactory.table.IDepartment;
 import com.my.dp.abstractFactory.table.IUser;
 
 /**
@@ -12,5 +12,5 @@ public interface IFactory {
 
     IUser createUser();
 
-    IDeparment createDepartment();
+    IDepartment createDepartment();
 }

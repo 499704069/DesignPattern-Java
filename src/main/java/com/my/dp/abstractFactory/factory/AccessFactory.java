@@ -2,7 +2,7 @@ package com.my.dp.abstractFactory.factory;
 
 import com.my.dp.abstractFactory.table.AccessDepartment;
 import com.my.dp.abstractFactory.table.AccessUser;
-import com.my.dp.abstractFactory.table.IDeparment;
+import com.my.dp.abstractFactory.table.IDepartment;
 import com.my.dp.abstractFactory.table.IUser;
 
 /**
@@ -18,7 +18,7 @@ public class AccessFactory implements IFactory {
     }
 
     @Override
-    public IDeparment createDepartment() {
+    public IDepartment createDepartment() {
         return new AccessDepartment();
     }
 }

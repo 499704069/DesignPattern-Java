@@ -8,7 +8,7 @@ import com.my.dp.abstractFactory.entity.User;
  * @version 1.0
  * @date 2021/1/12 10:58
  */
-public interface IDeparment {
+public interface IDepartment {
 
     void insertDepartment(Department user);
 

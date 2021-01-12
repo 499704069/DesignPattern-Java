@@ -2,10 +2,8 @@ package com.my.dp.abstractFactory;
 
 import com.my.dp.abstractFactory.entity.Department;
 import com.my.dp.abstractFactory.factory.DataAccess2;
-import com.my.dp.abstractFactory.factory.IFactory;
-import com.my.dp.abstractFactory.factory.SqlserverFactory;
 import com.my.dp.abstractFactory.entity.User;
-import com.my.dp.abstractFactory.table.IDeparment;
+import com.my.dp.abstractFactory.table.IDepartment;
 import com.my.dp.abstractFactory.table.IUser;
 
 /**
@@ -43,7 +41,7 @@ public class FactoryMain {
         user1.getUser(1);
 
         //IDeparment department1 = factory.createDepartment();
-        IDeparment department1 = dataAccess2.createDepartment();
+        IDepartment department1 = dataAccess2.createDepartment();
         department1.insertDepartment(department);
         department1.getDepartment(1);
     }

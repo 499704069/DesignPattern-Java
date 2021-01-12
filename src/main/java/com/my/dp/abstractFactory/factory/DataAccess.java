@@ -31,8 +31,8 @@ public class DataAccess {
         return result;
     }
 
-    public static IDeparment createDepartment(){
-        IDeparment result = null;
+    public static IDepartment createDepartment(){
+        IDepartment result = null;
         switch (DB){
             case "Sqlserver":
                 result = new SqlserverDepartment();
