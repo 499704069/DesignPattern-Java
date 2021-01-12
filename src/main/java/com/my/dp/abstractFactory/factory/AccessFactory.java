@@ -12,10 +12,12 @@ import com.my.dp.abstractFactory.table.IUser;
  */
 public class AccessFactory implements IFactory {
 
+    @Override
     public IUser createUser() {
         return new AccessUser();
     }
 
+    @Override
     public IDeparment createDepartment() {
         return new AccessDepartment();
     }

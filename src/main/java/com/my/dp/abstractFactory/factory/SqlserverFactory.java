@@ -12,10 +12,12 @@ import com.my.dp.abstractFactory.table.SqlserverUser;
  */
 public class SqlserverFactory implements IFactory {
 
+    @Override
     public IUser createUser() {
         return new SqlserverUser();
     }
 
+    @Override
     public IDeparment createDepartment() {
         return new SqlserverDepartment();
     }
