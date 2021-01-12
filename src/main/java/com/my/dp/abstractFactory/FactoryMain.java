@@ -1,6 +1,7 @@
 package com.my.dp.abstractFactory;
 
 import com.my.dp.abstractFactory.entity.Department;
+import com.my.dp.abstractFactory.factory.DataAccess2;
 import com.my.dp.abstractFactory.factory.IFactory;
 import com.my.dp.abstractFactory.factory.SqlserverFactory;
 import com.my.dp.abstractFactory.entity.User;
@@ -28,18 +29,21 @@ import com.my.dp.abstractFactory.table.IUser;
  */
 public class FactoryMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
         User user = new User();
         Department department = new Department();
 
         //factory根据实际替换
-        IFactory factory = new SqlserverFactory();
-        IUser user1 = factory.createUser();
+        //IFactory factory = new SqlserverFactory();
+        //IUser user1 = factory.createUser();
+        DataAccess2 dataAccess2 = new DataAccess2();
+        IUser user1 = dataAccess2.createUser();
 
         user1.insert(user);
         user1.getUser(1);
 
-        IDeparment department1 = factory.createDepartment();
+        //IDeparment department1 = factory.createDepartment();
+        IDeparment department1 = dataAccess2.createDepartment();
         department1.insertDepartment(department);
         department1.getDepartment(1);
     }
