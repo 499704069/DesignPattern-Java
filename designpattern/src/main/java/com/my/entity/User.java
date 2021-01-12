@@ -1,10 +1,4 @@
 package com.my.entity;
-/*
- * Copyright(c) 2017-2020, 深圳市链融科技股份有限公司
- * ShenZhen LianRong Technology Co., Ltd.
- * All rights reserved.
- */
-
 
 import lombok.Data;
 
